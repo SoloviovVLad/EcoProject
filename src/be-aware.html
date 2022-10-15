@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://kit.fontawesome.com/d223746498.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="popup-fade popup-fade--login popup-fade--login--close">
+        <div class="popup">
+            <div class="popup__close popup__close--login">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="popup__caption">
+                Приєднатися до єко-суспільства
+            </div>
+            <div class="popup__contant">
+                <div class="popup__contant__left">
+                    <div class="popup__contant__caption">
+                        Вхід
+                    </div>
+                    <form action="" class="popup__popup-form">
+                        <label for="email-login" display=flex>Email 
+                            <input type="email" class="popup__input" id="email-login" placeholder="Ваш Email">
+                        </label>
+                        
+                        <label for="pass-login" display=flex>Пароль
+                        </label>
+                        <input type="password" class="popup__input" id="pass-login" placeholder="Ваш пароль">
+                        <button type="submit" class="button-main-page">
+                            Увійти
+                        </button>
+                    </form>
+                </div>
+                <div class="popup__contant__right">
+                    <span class="popup__contant__caption popup__contant__caption--padding-top">
+                        Реєстрація
+                    </span>
+                    <div class="popup__popup-form__social-login">
+                        <button class="button-social button-social--google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button class="button-social button-social--facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </button>
+                    </div>
+                    <form class="popup__popup-form">
+                        <label for="email-reg" display=flex>Email 
+                            <input type="email" class="popup__input" id="email-reg" placeholder="Ваш Email">
+                        </label>
+                        
+                        <label for="pass-reg" display=flex>Пароль
+                        </label>
+                        <input type="password" class="popup__input" id="pass-reg" placeholder="Ваш пароль">
+                        <button type="submit" class="button-main-page">
+                            Зареєструватися
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-fade popup-fade--checkout popup-fade--checkout--close">
+        <div class="popup">
+            <div class="popup__close popup__close--checkout">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="popup__caption">
+                Оформлення замовлення
+            </div>
+            <div class="popup__contant">
+                <div class="popup__contant__left">
+                    <div class="popup__contant__caption">
+                        Оплатити
+                    </div>
+                    <div class="popup__contant__payment">
+                        <img src="img/visa.png" alt="">
+                        <img src="img/mastercard.png" alt="">
+                    </div>
+                    <form action="" class="popup__popup-form">
+                        <label for="email-checkout" display=flex>Email 
+                            <input type="email" class="popup__input" id="email-checkout" placeholder="Ваш Email">
+                        </label>
+                        
+                        <label for="card-number-checkout" display=flex>Номер карти
+                        </label>
+                        <input type="tel" class="popup__input" id="card-number-checkout" placeholder="1111 2222 3333 4444" maxlength="19">
+                        <div>
+                            <div>
+                                <label for="card-number-checkout" display=flex>Строк дії
+                                </label>
+                                <input type="tel" class="popup__input" id="card-number-checkout" placeholder="ММ/РР">
+                            </div>
+                            <div>
+                                <label for="card-number-checkout" display=flex>CVV
+                                </label>
+                                <input type="tel" class="popup__input" id="card-number-checkout" placeholder="123">
+                            </div>
+                        </div>
+                        <button type="submit" class="button-main-page">
+                            Оплатити
+                        </button>
+                    </form>
+                    <div class="popup__contant__other-method-payment">
+                        <div>Оплатити іншим методом</div>
+                        <button class="button-payment">
+                            <img src="img/privat.png" alt="">
+                        </button>
+                        <button class="button-payment">
+                            <img src="img/gpay.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="popup__contant__right">
+                    <span class="popup__contant__caption popup__contant__caption--padding-top">
+                        Ваше замовлення
+                    </span>
+                    <div class="popup__contant__basket-list">
+                        <div class="popup__contant__basket-list__item">
+                            <div class="popup__contant__basket-list__item__type">
+                                Дерево
+                            </div>
+                            <div class="popup__contant__basket-list__item__name">
+                                Липа
+                            </div>
+                            <div class="popup__contant__basket-list__item__count">
+                                <button class="popup__contant__basket-list__item__count__button-add">-</button>
+                                <span>1</span>
+                                <button class="popup__contant__basket-list__item__count__button-remove">+</button>
+                                <div class="popup__contant__basket-list__item__count__delete-item">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="popup__contant__basket-list__item">
+                            <div class="popup__contant__basket-list__item__type">
+                                Дерево
+                            </div>
+                            <div class="popup__contant__basket-list__item__name">
+                                Липа
+                            </div>
+                            <div class="popup__contant__basket-list__item__count">
+                                <button class="popup__contant__basket-list__item__count__button-add">-</button>
+                                <span>1</span>
+                                <button class="popup__contant__basket-list__item__count__button-remove">+</button>
+                                <div class="popup__contant__basket-list__item__count__delete-item">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="popup__contant__basket-list__item">
+                            <div class="popup__contant__basket-list__item__type">
+                                Дерево
+                            </div>
+                            <div class="popup__contant__basket-list__item__name">
+                                Липа
+                            </div>
+                            <div class="popup__contant__basket-list__item__count">
+                                <button class="popup__contant__basket-list__item__count__button-add">-</button>
+                                <span>1</span>
+                                <button class="popup__contant__basket-list__item__count__button-remove">+</button>
+                                <div class="popup__contant__basket-list__item__count__delete-item">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="popup__contant__basket-list__total-cost">
+                        Сума до сплати: <span>30</span> грн
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-fade popup-fade--nimfa popup-fade--nimfa--close">
+        <div class="popup-nimfa">
+            <div class="popup__close popup__close--nimfa">
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="popup-nimfa__contant">
+                <div class="popup-nimfa__contant__left">
+                    <div class="popup-nimfa__img">
+                        <img src="img/nimfa-popup.png" alt="">
+                    </div>
+                </div>
+                <div class="popup-nimfa__contant__right">
+                    <img src="img/nimfa-popup.png" alt="">
+                    <div class="popup-nimfa__text">
+                       
+
+                        <p class="popup-nimfa__text--p1">
+                            Щорічно, середньостатистичний житель Планети в виробляє 6 тонн СО2.
+                        </p>
+
+                        <p class="popup-nimfa__text--p1--mob">
+                            Щорічно, житель Планети виробляє 6 тонн СО2.
+                        </p>
+                        <p>
+                            Щоб в 2040 життя була можлива, для компенсації шкоди Планеті, одній 
+                            людині необхідно висаджувати 73 дерева, щорічно.
+                        </p>
+                        <p>
+                            Планета більше не буде колишньою. Наше переспоживання, яке викинуло 
+                            неймовірну кількість СО2 в атмосферу, ВЖЕ перегрівся нас. 
+                            Клімат змінився необоротно. Від нас зараз залежить наскільки ми зможемо
+                             пом'якшити наслідки.
+                        </p>
+                        <p>
+                            Поки уряди світу працюють над об'єднанням зусиль усіх країн, щоб 
+                            реорганізувати економіку і зменшити викиди, звичайні люди і підприємства 
+                            мають в руках простий і дієвий інструмент - садити дерева! Це поки що єдиний
+                             доступний кожному спосіб утримувати поточну t ° на Землі. 
+                            Єдиний спосіб оплатити свій вуглецевий слід, який ми створюємо
+                             на Планеті, насолоджуючись своєю комфортним життям.
+                        </p>
+                        <div class="popup-nimfa__text__buttons">
+                            <button class="button-main-page button-main-page--popup-nimfa">
+                                Дякую, лісна німфо
+                            </button>
+                            <a href="#">Дивитися відео інструкцію</a>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="img/logo_header.svg" alt="">
+        </a>
+        <nav class="header__nav">
+            <a href="who-we-are.html">Хто ми</a>
+            <a href="be-aware.html">Бути свідомим</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+        <div class="header__social">
+            <a href="#" class="header__social__item">
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </a>
+            <a href="#" class="header__social__item">
+                <div>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+        </div>
+        <button class="button-main-page button-main-page--header">
+            Приєднатися
+        </button>
+        <div class="header__burger header__burger--click">
+            <div class="header__burger__lines ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <nav class="burger-menu__nav">
+                <button class="button-main-page button-main-page--burger-menu">
+                    Приєднатися
+                </button>
+                <a href="who-we-are.html">Хто ми</a>
+                <a href="be-aware.html">Бути свідомим</a>
+                <a href="contacts.html">Контакти</a>
+                <div>
+                    <div class="header__social header__social--burger-menu">
+                        <a href="#" class="header__social__item">
+                            <div>
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="header__social__item">
+                            <div>
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="block-be-aware">
+    
+        <div class="block-who-we-are__caption">Бути свідомим</div>
+
+        <div class="block-be-aware__slider">
+            <div class="block-be-aware__slider__wrapper">
+                <div class="block-be-aware__slider__track">
+                    <div class="block-be-aware__slider__item">
+                        <div class="block-be-aware__slider__item__content">
+                            <div class="block-be-aware__slider__item__content__img">
+                                <img src="img/slider-img.png" alt="">
+                            </div>
+                            <div class="block-be-aware__slider__item__content__text">
+                                <div class="block-be-aware__slider__item__content__navigation">
+                                    <div class="block-be-aware__slider__count-items">
+                                        <span class="block-be-aware__slider__count-items--current">1</span> / <span class="block-be-aware__slider__count-items--total">5</span>
+                                    </div>
+                                    <div class="block-be-aware__slider__block-arrows">
+                                        <div class="block-be-aware__slider__block-arrows__arrow block-be-aware__slider__block-arrows__arrow__prev">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="block-be-aware__slider__block-arrows__arrow block-be-aware__slider__block-arrows__arrow__next">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-be-aware__slider__item__content__caption">
+                                   Факты про дерева
+                                </div>
+                                <span>
+                                    Папір можна переробляти від 4 до 7 разів. З кожною 
+                                    переробкою його якість погіршується. Папір складається
+                                    з довгих волокон, тому кожен раз, коли він переробляється,
+                                    ці волокна будуть зменшуватися, і в наступний раз його буде
+                                    складніше переробляти.
+                                </span>
+                            </div>
+                    
+
+                        </div>
+                    </div>
+                    <div class="block-be-aware__slider__item">
+                        <div class="block-be-aware__slider__item__content">
+                            <div class="block-be-aware__slider__item__content__img">
+                                <img src="img/slider-img.png" alt="">
+                            </div>
+                            <div class="block-be-aware__slider__item__content__text">
+                                <div class="block-be-aware__slider__item__content__navigation">
+                                    <div class="block-be-aware__slider__count-items">
+                                        <span class="block-be-aware__slider__count-items--current">1</span> / <span class="block-be-aware__slider__count-items--total">5</span>
+                                    </div>
+                                    <div class="block-be-aware__slider__block-arrows">
+                                        <div class="block-be-aware__slider__block-arrows__arrow block-be-aware__slider__block-arrows__arrow__prev">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="block-be-aware__slider__block-arrows__arrow block-be-aware__slider__block-arrows__arrow__next">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-be-aware__slider__item__content__caption">
+                                   Факты про дерева
+                                </div>
+                                <span>
+                                    Папір можна переробляти від 4 до 7 разів. З кожною 
+                                    переробкою його якість погіршується. Папір складається
+                                    з довгих волокон, тому кожен раз, коли він переробляється,
+                                    ці волокна будуть зменшуватися, і в наступний раз його буде
+                                    складніше переробляти.
+                                </span>
+                            </div>
+                    
+
+                        </div>
+                    </div>
+                    <div class="block-be-aware__slider__item">
+                        <div class="block-be-aware__slider__item__content">
+                            <div class="block-be-aware__slider__item__content__img">
+                                <img src="img/slider-img.png" alt="">
+                            </div>
+                            <div class="block-be-aware__slider__item__content__text">
+                                <div class="block-be-aware__slider__item__content__navigation">
+                                    <div class="block-be-aware__slider__count-items">
+                                        <span class="block-be-aware__slider__count-items--current">1</span> / <span class="block-be-aware__slider__count-items--total">5</span>
+                                    </div>
+                                    <div class="block-be-aware__slider__block-arrows">
+                                        <div class="block-be-aware__slider__block-arrows__arrow block-be-aware__slider__block-arrows__arrow__prev">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="block-be-aware__slider__block-arrows__arrow block-be-aware__slider__block-arrows__arrow__next">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-be-aware__slider__item__content__caption">
+                                   Факты про дерева
+                                </div>
+                                <span>
+                                    Папір можна переробляти від 4 до 7 разів. З кожною 
+                                    переробкою його якість погіршується. Папір складається
+                                    з довгих волокон, тому кожен раз, коли він переробляється,
+                                    ці волокна будуть зменшуватися, і в наступний раз його буде
+                                    складніше переробляти.
+                                </span>
+                            </div>
+                    
+
+                        </div>
+                    </div>
+                    <div class="block-be-aware__slider__item">
+                        <div class="block-be-aware__slider__item__content">
+                            <div class="block-be-aware__slider__item__content__img">
+                                <img src="img/slider-img.png" alt="">
+                            </div>
+                            <div class="block-be-aware__slider__item__content__text">
+                                <div class="block-be-aware__slider__item__content__navigation">
+                                    <div class="block-be-aware__slider__count-items">
+                                        <span class="block-be-aware__slider__count-items--current">1</span> / <span class="block-be-aware__slider__count-items--total">5</span>
+                                    </div>
+                                    <div class="block-be-aware__slider__block-arrows">
+                                        <div class="block-be-aware__slider__block-arrows__arrow block-be-aware__slider__block-arrows__arrow__prev">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="block-be-aware__slider__block-arrows__arrow block-be-aware__slider__block-arrows__arrow__next">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-be-aware__slider__item__content__caption">
+                                   Факты про дерева
+                                </div>
+                                <span>
+                                    Папір можна переробляти від 4 до 7 разів. З кожною 
+                                    переробкою його якість погіршується. Папір складається
+                                    з довгих волокон, тому кожен раз, коли він переробляється,
+                                    ці волокна будуть зменшуватися, і в наступний раз його буде
+                                    складніше переробляти.
+                                </span>
+                            </div>
+                    
+
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <a href="index.html" class="footer__logo">
+                <img src="img/logo_footer.svg" alt="">
+            </a>
+            <div class="footer__contacts">
+                <div class="footer__caption">
+                    Контакти
+                </div>
+            <div class="footer__contacts__block-items">
+                <a href="tel:+380931235656"><i class="fas fa-phone-alt"></i>+38 (093) 123 - 56 - 56</a>
+                <a href="tel:+380931235656"><i class="fas fa-phone-alt"></i>+38 (093) 123 - 56 - 56</a>
+                <a href="mailto:eco.project@gmail.com"><i class="fas fa-envelope"></i>eco.project@gmail.com</a>
+            </div>
+            </div>
+            <div class="footer__social">
+                <div class="footer__caption">
+                    <img src="img/ukraine-organization.png" alt="">
+                </div>
+                <div class="footer__social__block-items">
+                    <a href="#" class="header__social__item">
+                        <div>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="header__social__item">
+                        <div>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a >
+                <button class="button-main-page button-main-page--footer">
+                    Посадити дерево
+                </button>
+            </a>
+        </div> 
+    </footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

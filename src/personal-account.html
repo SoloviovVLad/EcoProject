@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://kit.fontawesome.com/d223746498.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="popup-fade popup-fade--checkout popup-fade--checkout--close">
+        <div class="popup">
+            <div class="popup__close popup__close--checkout">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="popup__caption">
+                Оформлення замовлення
+            </div>
+            <div class="popup__contant">
+                <div class="popup__contant__left">
+                    <div class="popup__contant__caption">
+                        Оплатити
+                    </div>
+                    <div class="popup__contant__payment">
+                        <img src="img/visa.png" alt="">
+                        <img src="img/mastercard.png" alt="">
+                    </div>
+                    <form action="" class="popup__popup-form">
+                        <label for="email-checkout" display=flex>Email 
+                            <input type="email" class="popup__input" id="email-checkout" placeholder="Ваш Email">
+                        </label>
+                        
+                        <label for="card-number-checkout" display=flex>Номер карти
+                        </label>
+                        <input type="tel" class="popup__input" id="card-number-checkout" placeholder="1111 2222 3333 4444" maxlength="19">
+                        <div>
+                            <div>
+                                <label for="card-number-checkout" display=flex>Строк дії
+                                </label>
+                                <input type="tel" class="popup__input" id="card-number-checkout" placeholder="ММ/РР">
+                            </div>
+                            <div>
+                                <label for="card-number-checkout" display=flex>CVV
+                                </label>
+                                <input type="tel" class="popup__input" id="card-number-checkout" placeholder="123">
+                            </div>
+                        </div>
+                        <button type="submit" class="button-main-page">
+                            Оплатити
+                        </button>
+                    </form>
+                    <div class="popup__contant__other-method-payment">
+                        <div>Оплатити іншим методом</div>
+                        <button class="button-payment">
+                            <img src="img/privat.png" alt="">
+                        </button>
+                        <button class="button-payment">
+                            <img src="img/gpay.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="popup__contant__right">
+                    <span class="popup__contant__caption popup__contant__caption--padding-top">
+                        Ваше замовлення
+                    </span>
+                    <div class="popup__contant__basket-list">
+                        <div class="popup__contant__basket-list__item">
+                            <div class="popup__contant__basket-list__item__type">
+                                Дерево
+                            </div>
+                            <div class="popup__contant__basket-list__item__name">
+                                Липа
+                            </div>
+                            <div class="popup__contant__basket-list__item__count">
+                                <button class="popup__contant__basket-list__item__count__button-add">-</button>
+                                <span>1</span>
+                                <button class="popup__contant__basket-list__item__count__button-remove">+</button>
+                                <div class="popup__contant__basket-list__item__count__delete-item">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="popup__contant__basket-list__item">
+                            <div class="popup__contant__basket-list__item__type">
+                                Дерево
+                            </div>
+                            <div class="popup__contant__basket-list__item__name">
+                                Липа
+                            </div>
+                            <div class="popup__contant__basket-list__item__count">
+                                <button class="popup__contant__basket-list__item__count__button-add">-</button>
+                                <span>1</span>
+                                <button class="popup__contant__basket-list__item__count__button-remove">+</button>
+                                <div class="popup__contant__basket-list__item__count__delete-item">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="popup__contant__basket-list__item">
+                            <div class="popup__contant__basket-list__item__type">
+                                Дерево
+                            </div>
+                            <div class="popup__contant__basket-list__item__name">
+                                Липа
+                            </div>
+                            <div class="popup__contant__basket-list__item__count">
+                                <button class="popup__contant__basket-list__item__count__button-add">-</button>
+                                <span>1</span>
+                                <button class="popup__contant__basket-list__item__count__button-remove">+</button>
+                                <div class="popup__contant__basket-list__item__count__delete-item">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="popup__contant__basket-list__total-cost">
+                        Сума до сплати: <span>30</span> грн
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-fade popup-fade--login popup-fade--login--close">
+        <div class="popup">
+            <div class="popup__close popup__close--login">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="popup__caption">
+                Приєднатися до єко-суспільства
+            </div>
+            <div class="popup__contant">
+                <div class="popup__contant__left">
+                    <div class="popup__contant__caption">
+                        Вхід
+                    </div>
+                    <form action="" class="popup__popup-form">
+                        <label for="email-login" display=flex>Email 
+                            <input type="email" class="popup__input" id="email-login" placeholder="Ваш Email">
+                        </label>
+                        
+                        <label for="pass-login" display=flex>Пароль
+                        </label>
+                        <input type="password" class="popup__input" id="pass-login" placeholder="Ваш пароль">
+                        <button type="submit" class="button-main-page">
+                            Увійти
+                        </button>
+                    </form>
+                </div>
+                <div class="popup__contant__right">
+                    <span class="popup__contant__caption popup__contant__caption--padding-top">
+                        Реєстрація
+                    </span>
+                    <div class="popup__popup-form__social-login">
+                        <button class="button-social button-social--google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button class="button-social button-social--facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </button>
+                    </div>
+                    <form class="popup__popup-form">
+                        <label for="email-reg" display=flex>Email 
+                            <input type="email" class="popup__input" id="email-reg" placeholder="Ваш Email">
+                        </label>
+                        
+                        <label for="pass-reg" display=flex>Пароль
+                        </label>
+                        <input type="password" class="popup__input" id="pass-reg" placeholder="Ваш пароль">
+                        <button type="submit" class="button-main-page">
+                            Зареєструватися
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="img/logo_header.svg" alt="">
+        </a>
+        <nav class="header__nav">
+            <a href="about.html">Про нас</a>
+            <a href="be-aware.html">Факты про дерева</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+        <div class="header__social">
+            <a href="#" class="header__social__item">
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </a>
+            <a href="#" class="header__social__item">
+                <div>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+        </div>
+        <div class="header__block-autorization">
+            <button class="header__block-autorization__log-out">
+                Bийти
+            </button>
+            <a href="#">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#" class="header__block-autorization__icon">
+                <img src="img/user.png" alt="">
+            </a>
+        </div>
+        <div class="header__burger header__burger--click">
+            <div class="header__burger__lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <nav class="burger-menu__nav">
+                <button class="button-main-page button-main-page--burger-menu">
+                    Приєднатися
+                </button>
+                <a href="who-we-are.html">Хто ми</a>
+                <a href="be-aware.html">Бути свідомим</a>
+                <a href="contacts.html">Контакти</a>
+                <div>
+                    <div class="header__social header__social--burger-menu">
+                        <a href="#" class="header__social__item">
+                            <div>
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="header__social__item">
+                            <div>
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="block-map">
+            <div class="block-map__container">
+                <div class="block-map__container__personal-account__caption">
+                    Особистий кабінет
+                </div>
+                <a href="mailto:ivanivanov@gmail.com" class="block-map__container__personal-account__menu__item__icon__email--mob">ivanivanov@gmail.com</a>
+                <div class="block-map__icons">
+                    <a href="#"class="block-map__icons__item">
+                        <img src="img/icon-sun.png" alt="">
+                    </a>
+                    <a href="#"class="block-map__icons__item">
+                        <img src="img/icon-rain.png" alt="">
+                    </a>
+                    <a href="#"class="block-map__icons__item">
+                        <img src="img/icon-watering-can.png" alt="">
+                    </a>
+                    <a href="#"class="block-map__icons__item">
+                        <img src="img/icon-rake.png" alt="">
+                    </a>
+                </div>
+                <div class="block-map__map block-map__map--personal-account">
+                    <img src="img/map-of-region.png" alt="">
+                </div>
+                <div class="block-map__container__personal-account__menu">
+                    <div class="block-map__container__personal-account__menu__item block-map__container__personal-account__menu__item--first">
+                        <button class="button-care-tree">
+                            Піклуватися про дерева
+                        </button>
+                        <button class="button-with-img">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                        <div class="block-map__container__personal-account__menu__item__icon">
+                            <a href="#" class="block-map__container__personal-account__menu__item__icon__container">
+                                <img src="img/user.png" alt="">
+                            </a>
+                            <a href="mailto:ivanivanov@gmail.com" class="block-map__container__personal-account__menu__item__icon__email">ivanivanov@gmail.com</a>
+                            <a href="#" class="block-map__container__personal-account__menu__item__icon__settings">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block-map__container__personal-account__menu__item block-map__container__personal-account__menu__item--second">
+                        <button class="button-main-page button-main-page--personal-account">
+                            Мандрувати Україною
+                        </button>
+                        <button class="button-main-page button-main-page--personal-account button-main-page--personal-account--with-span">
+                           <span>+ <img class="button-main-page--personal-account--img" src="img/tree_add.png" alt=""></span> 
+                            <span>Посадити дерево</span>
+                        </button>
+                        <button class="button-main-page button-main-page--personal-account">
+                            Запросити друга
+                        </button>
+                        <button class="button-main-page button-main-page--personal-account button-main-page--personal-account--hide">
+                            Повідомлення
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div> 
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <a href="index.html" class="footer__logo">
+                <img src="img/logo_footer.svg" alt="">
+            </a>
+            <div class="footer__contacts">
+                <div class="footer__caption">
+                    Контакти
+                </div>
+            <div class="footer__contacts__block-items">
+                <a href="tel:+380931235656"><i class="fas fa-phone-alt"></i>+38 (093) 123 - 56 - 56</a>
+                <a href="tel:+380931235656"><i class="fas fa-phone-alt"></i>+38 (093) 123 - 56 - 56</a>
+                <a href="mailto:eco.project@gmail.com"><i class="fas fa-envelope"></i>eco.project@gmail.com</a>
+            </div>
+            </div>
+            <div class="footer__social">
+                <div class="footer__caption">
+                    <img src="img/ukraine-organization.png" alt="">
+                </div>
+                <div class="footer__social__block-items">
+                    <a href="#" class="header__social__item">
+                        <div>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="header__social__item">
+                        <div>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a >
+                <button class="button-main-page button-main-page--footer">
+                    Посадити дерево
+                </button>
+            </a>
+        </div> 
+    </footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+</body>
+</html>
